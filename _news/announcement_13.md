@@ -5,4 +5,4 @@ inline: true
 ---
 
 <!-- A simple inline announcement with Markdown emoji! :sparkles: :smile: -->
-Our poster of bimanual tactile robotic system is selected for the Best Posters Finalists in [the 4th UK Robot Manipulation Workshop](https://www.robot-manipulation.uk/).
+Our poster of bimanual tactile robotic system is selected for the Best Posters Finalists in [the 4th UK Robot Manipulation Workshop](https://www.robot-manipulation.uk/) in Bristol, UK.
