@@ -1,7 +1,7 @@
 ---
 layout: post
-title: A long announcement with details
-date: 2015-11-07 16:11:00-0400
+title: I attended IROS 2022 for presenting our paper in Kyoto, Japan.
+date: 2022-10-25 16:11:00-0400
 inline: false
 ---
 

@@ -9,17 +9,15 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+
 
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a Ph.D. student working with Prof. [Nathan Lepora](https://lepora.com/) and Dr. [Dandan Zhang](https://www.intelligentrobotics-acrossscales.com/) at [the University of Bristol](https://research-information.bris.ac.uk/en/persons/yijiong-lin), UK. My research mainly focuses on the intersection of Robotics and Machine Learning. Specifically, my current research interests lie in these topics: Robotic Manipulation, Deep Reinforcement Learning, Tactile Sensing, Physics Simulation, and Sim-to-Real.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I obtained my master's degree in Mechanical Engineering and Automation at the Guangdong University of Technology in 2017, supervised by Prof. [Yisheng Guan](https://ieeexplore.ieee.org/author/37402001000) and Dr. [Juan Rojas](http://www.juanrojas.net/). During my master's period, I worked with Prof. [Paul Weng](https://weng.fr/) at the University of Michigan-Shanghai Jiao Tong University Joint Institute as a visiting student and later conducted a one-year research project on Reinforcement Learning. I did my Master's thesis on Highly-efficient Robot Learning with Deep Reinforcement Learning.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Contact: yijiong {dot} lin {at} bristol {dot} ac {dot} uk
