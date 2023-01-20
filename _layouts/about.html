@@ -8,7 +8,7 @@ layout: default
           <h1 class="post-title">
            {% if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} <span class="font-weight-bold">{{ site.last_name }}</span>{%- else -%}{{ site.title }}{%- endif %}
           </h1>
-          <p class="desc"><span class="font-weight">Email:mailbox::</span> {{ page.subtitle }}</p>
+          <p class="desc"><span class="font-weight">:envelope: : </span> {{ page.subtitle }}</p>
         </header>
 
         <article>
@@ -30,7 +30,8 @@ layout: default
             {% endif -%}
             {%- if page.profile.address %}
             <div class="address">
-              {{ page.profile.address }}
+              <em>{{ page.profile.address }}</em>
+              <br />
             </div>
             {%- endif %}
           </div>
@@ -46,7 +47,8 @@ layout: default
           {% if page.news -%}
             <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;"><span class="font-weight-bold">News</span></a></h2>
             <span style="font-family:Times">
-              scroll down for more</span>
+              (scroll down to check)</span>
+              <br />
             {%- include news.html %}
           {%- endif %}
           <br />
