@@ -1,12 +1,16 @@
 ---
 layout: page
 permalink: /teaching/
-title: teaching
-description: Materials for courses you taught. Replace this text with your description.
+title: Teaching
+description: I have supported 4 master students at the University of Bristol to accomplish their thesis projects.
 nav: true
 nav_order: 5
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+[Di (Ivy) Wu](https://www.linkedin.com/in/ivy-wu98/): Tactile Manipulation Using Deep Reinforcement Learning on an Educational Robotics Platform
 
-Organize your courses by years, topics, or universities, however you like!
+[Shipeng Xiong](https://www.linkedin.com/in/%E4%BB%95%E9%B9%8F-%E7%86%8A-b6b058175/?locale=en_US): Data-Efficient Imitation Learning for Dexterous Manipulation
+
+[Pengyuan Wei](https://uclic.ucl.ac.uk/people/pengyuan-wei): Dual-arm Insertion with Tactile Sensing via Deep Reinforcement Learning
+
+[Jiangfeng Fan](): Towards more Learning Efficiency with Educational Robot in Tactile Gym
