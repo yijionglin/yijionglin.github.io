@@ -8,7 +8,7 @@ layout: default
           <h1 class="post-title">
            {% if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} <span class="font-weight-bold">{{ site.last_name }}</span>{%- else -%}{{ site.title }}{%- endif %}
           </h1>
-          <p class="desc">{{ page.subtitle }}</p>
+          <p class="desc"><span class="font-weight">Email:mailbox::</span> {{ page.subtitle }}</p>
         </header>
 
         <article>
@@ -37,15 +37,17 @@ layout: default
           {%- endif %}
 
           <div class="clearfix">
-            {{ content }}
+            <span style="font-family:Times">
+            {{ content }}</span>
           </div>
 
           <!-- News -->
+          <br />
           {% if page.news -%}
             <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;"><span class="font-weight-bold">News</span></a></h2>
             {%- include news.html %}
           {%- endif %}
-
+          <br />
           <!-- Selected papers -->
           {% if page.selected_papers -%}
             <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;"><span class="font-weight-bold">Selected Publications</span></a></h2>
