@@ -30,6 +30,13 @@
       description:
         - "Thesis: Improving the Robot Learning Efficiency with Deep Reinforcement Learning"
         - "Supervisor: Prof. Yisheng Guan and Dr. Juan Rojas"
+
+    - title: Bachelor Degree in Mechanical Engineering and Automation
+      institution: Guangdong University of Technology, Guangzhou, China
+      year: 2013 - 2017
+      description:
+        - "Ranking: 1 out of 52"
+        - "Excellent Postgraduate Candidates Exempt from Admission Exam (top 2.9% out of 810)."
         # - Description 2.
 
 # - title: Experience
