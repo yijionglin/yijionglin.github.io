@@ -2,7 +2,7 @@
 layout: page
 permalink: /repositories/
 title: Repositories
-description: Our papers' code are released in the following repos.
+description: Our papers' codes are released in the following repos.
 nav: true
 nav_order: 3
 ---
