@@ -4,7 +4,7 @@ permalink: /teaching/
 title: Teaching
 description: I have supported 4 master students at the University of Bristol to accomplish their thesis projects.
 nav: true
-nav_order: 5
+nav_order: 6
 ---
 
 [Di (Ivy) Wu](https://www.linkedin.com/in/ivy-wu98/): Tactile Manipulation Using Deep Reinforcement Learning on an Educational Robotics Platform
