@@ -1,13 +1,16 @@
 ---
 layout: page
 permalink: /professionalactivities/
-title: Professional Activities
-description: Reviewer
+title: Reviewer
+description: I have been serving as a reviewer for the following journals and conferences.
 nav: true
 nav_order: 5
 ---
 
 IEEE/ASME Transactions on Mechatronics
+
 IEEE Robotics and Automation Letters
-IEEE International Conference on Robotics and Automation (ICRA)
+
 IEEE International Conference on Intelligent Robots and Systems (IROS)
+
+IEEE International Conference on Robotics and Automation (ICRA)
