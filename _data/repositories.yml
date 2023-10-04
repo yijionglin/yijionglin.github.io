@@ -5,6 +5,9 @@ github_users:
 
 github_repos:
   - ac-93/tactile_gym
+  - dexterousrobot/tactile_gym
+  - dexterousrobot/tactile_sim
+  - yijionglin/tactile_gym/tree/Bi-Touch
   - birlrobotics/ITER_KER_GER
   - nlepora/pbts-2d
   - nlepora/digitac-design
