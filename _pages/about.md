@@ -21,4 +21,4 @@ I am a Ph.D. student working with Prof. [Nathan Lepora](https://lepora.com/) and
 
 I obtained my master's degree in Mechanical Engineering and Automation at the Guangdong University of Technology in 2017, supervised by Prof. [Yisheng Guan](https://ieeexplore.ieee.org/author/37402001000) and Dr. [Juan Rojas](http://www.juanrojas.net/). During my master's period, I worked with Prof. [Paul Weng](https://weng.fr/) at the University of Michigan-Shanghai Jiao Tong University Joint Institute as a visiting student and later conducted a one-year research project on Reinforcement Learning. I did my Master's thesis on Highly-efficient Robot Learning with Deep Reinforcement Learning.
 
-In my free time, you can catch me playing badminton, swimming, or exploring city and natural views with my lovely camera. I'm also a cat person. :smile_cat:
+In my free time, you can catch me playing badminton, swimming, or exploring city and natural views with my lovely camera ([Here are some selections from my portfolio.](https://www.flickr.com/photos/193186347@N02/with/52463943697/)). I'm also a cat person. :smile_cat:
