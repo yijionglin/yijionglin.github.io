@@ -16,6 +16,7 @@ news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
+[I am currently looking for a PostDoc or Fellowship position (starting around 2024 Winter/2025 Spring).]
 
 I am a Ph.D. student working with Prof. [Nathan Lepora](https://lepora.com/) and Dr. [Dandan Zhang](https://www.intelligentrobotics-acrossscales.com/) at [the University of Bristol](https://research-information.bris.ac.uk/en/persons/yijiong-lin), UK. My research mainly focuses on the intersection of Robotics and Machine Learning. Specifically, my current research interests lie in these topics: Robotic Manipulation, Deep Reinforcement Learning, Tactile Sensing, Physics Simulation, and Sim-to-Real.
 

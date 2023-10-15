@@ -2,13 +2,6 @@
 layout: page
 permalink: /teaching/
 title: Teaching
-profile:
-  align: right
-  image: prof_pic.jpeg
-  image_circular: false # crops the image to make it circular
-  address: I envision intelligent robots will reshape our planet.
-
-
 description: I am also a Graduate Teaching Assistant at the University of Bristol for Robotics Research Technology and Methods (EMATM0058). Responsibilities include 1) assisting the unit director with administrative duties and offering support during seminars and laboratory sessions., 2) leading weekly critical thinking and discussion sessions on robotics literature, 3) providing project supervision, feedback, marking and assessment to students. Besides, I have also supported 6 master students at the University of Bristol to accomplish their thesis projects.
 nav: true
 nav_order: 6
