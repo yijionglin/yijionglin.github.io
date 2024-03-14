@@ -7,9 +7,13 @@ nav: true
 nav_order: 5
 ---
 
+IEEE Transactions on Robotics
+
 IEEE/ASME Transactions on Mechatronics
 
 IEEE Robotics and Automation Letters
+
+Robotics and Autonomous Systems
 
 IEEE International Conference on Intelligent Robots and Systems (IROS)
 
