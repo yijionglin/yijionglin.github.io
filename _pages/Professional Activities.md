@@ -15,6 +15,10 @@ IEEE Robotics and Automation Letters
 
 Robotics and Autonomous Systems
 
+Conference on Robot Learning (CoRL)
+
+Robotics: Science and Systems (RSS)
+
 IEEE International Conference on Intelligent Robots and Systems (IROS)
 
 IEEE International Conference on Robotics and Automation (ICRA)
