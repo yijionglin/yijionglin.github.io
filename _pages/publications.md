@@ -15,7 +15,7 @@ nav_order: 1
   For more up-to-date information, please refer to my 
   <a href="https://scholar.google.com/citations?user=SQl1XCUAAAAJ&hl=en&oi=ao" target="_blank" style="text-decoration: underline;">
     Google Scholar
-  </a> profile.
+  </a>.
 </p>
 
 {%- for y in page.years %}
