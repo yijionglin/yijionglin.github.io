@@ -53,10 +53,6 @@ layout: default
               {% assign news_title = "News" %}
             {% endif %}
             <h2><a href="{{ news_url | relative_url }}" style="color: inherit;"><span class="font-weight-bold">{{ news_title }}</span></a></h2>
-            <span style="font-family:Times">
-              ({{ scholar_note }}
-              <a href="https://scholar.google.com/citations?user=SQl1XCUAAAAJ&hl=en&oi=ao" target="_blank" style="text-decoration: underline;">Google Scholar</a>)
-            </span>
             <br />
             {%- include news.html scrollable=site.news_scrollable limit=3 bullets=true %}
           {%- endif %}
