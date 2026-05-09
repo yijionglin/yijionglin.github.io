@@ -3,7 +3,7 @@ layout: page
 permalink: /zh/professionalactivities/
 title: 学术服务
 lang: zh
-description: 我曾为以下期刊和会议担任审稿人。
+description: 我长期为以下期刊和会议担任审稿人。
 nav: true
 nav_order: 5
 ---
