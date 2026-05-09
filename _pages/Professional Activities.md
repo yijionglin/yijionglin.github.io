@@ -22,3 +22,7 @@ Robotics: Science and Systems (RSS)
 IEEE International Conference on Intelligent Robots and Systems (IROS)
 
 IEEE International Conference on Robotics and Automation (ICRA)
+
+## Workshop Organization
+
+Co-organizer, [ICRA 2026 ViTac Workshop: Learning to See and Feel: Vision-Tactile Synergy for Embodied AI](https://shanluo.github.io/ViTacWorkshops/vitac2026)
