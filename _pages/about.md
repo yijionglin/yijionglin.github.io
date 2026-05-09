@@ -10,7 +10,7 @@ profile:
   align: right
   image: prof_pic5_cropped.jpg
   image_circular: False # crops the image to make it circular
-  address: I envision intelligent robots will reshape our planet.
+  # address: I envision intelligent robots will reshape our planet.
 
 
 news: true  # includes a list of news items
