@@ -2,8 +2,18 @@
 ---
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 {% if entry.preview %}preview{% else %}abbr{% endif %}">
-        {%- if entry.preview -%}
+        <div class="col-sm-2 {% if entry.preview_video or entry.preview %}preview{% else %}abbr{% endif %}">
+        {%- if entry.preview_video -%}
+          {% if entry.preview_video contains '://' -%}
+          <video class="preview z-depth-1 rounded" autoplay muted loop playsinline {% if entry.preview %}poster="{% if entry.preview contains '://' %}{{ entry.preview }}{% else %}{{ entry.preview | prepend: '/assets/img/publication_preview/' | relative_url }}{% endif %}"{% endif %}>
+            <source src="{{ entry.preview_video }}">
+          </video>
+          {%- else -%}
+          <video class="preview z-depth-1 rounded" autoplay muted loop playsinline {% if entry.preview %}poster="{% if entry.preview contains '://' %}{{ entry.preview }}{% else %}{{ entry.preview | prepend: '/assets/img/publication_preview/' | relative_url }}{% endif %}"{% endif %}>
+            <source src="{{ entry.preview_video | prepend: '/assets/img/publication_preview/' | relative_url }}">
+          </video>
+          {%- endif -%}
+        {%- elsif entry.preview -%}
           {% if entry.preview contains '://' -%}
           <img class="preview z-depth-1 rounded" src="{{ entry.preview }}">
           {%- else -%}
@@ -37,16 +47,17 @@
 
         {%- for author in entry.author_array limit: author_array_limit -%}
           {%- assign author_is_self = false -%}
+          {%- assign author_first_name = author.first | remove: "Â¶" | remove: "&" | remove: "*" | remove: "†" | remove: "â€ " | remove: "^" -%}
           {%- assign author_last_name = author.last | remove: "¶" | remove: "&" | remove: "*" | remove: "†" | remove: "^" -%}
           {%- if site.scholar.last_name contains author_last_name -%}
-            {%- if site.scholar.first_name contains author.first -%}
+            {%- if site.scholar.first_name contains author_first_name -%}
               {%- assign author_is_self = true -%}
             {%- endif -%}
           {%- endif -%}
           {%- assign coauthor_url = nil -%}
           {%- if site.data.coauthors[author_last_name] -%}
             {%- for coauthor in site.data.coauthors[author_last_name] -%}
-              {%- if coauthor.firstname contains author.first -%}
+              {%- if coauthor.firstname contains author_first_name -%}
                 {%- assign coauthor_url = coauthor.url -%}
                 {%- break -%}
               {%- endif -%}
@@ -145,9 +156,9 @@
           {%- endif %}
           {%- if entry.pdf %}
             {% if entry.pdf contains '://' -%}
-            <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button">Paper</a>
             {%- else -%}
-            <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Paper</a>
             {%- endif %}
           {%- endif %}
           {%- if entry.supp %}
@@ -179,6 +190,15 @@
           {%- endif %}
           {%- if entry.website %}
             <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
+          {%- endif %}
+          {%- if entry.video %}
+            <a href="{{ entry.video }}" class="btn btn-sm z-depth-0" role="button">Video</a>
+          {%- endif %}
+          {%- if entry.press %}
+            <a href="{{ entry.press }}" class="btn btn-sm z-depth-0" role="button">Press</a>
+          {%- endif %}
+          {%- if entry.summary %}
+            <a href="{{ entry.summary }}" class="btn btn-sm z-depth-0" role="button">Summary</a>
           {%- endif %}
           </div>
           {% if site.badges %}

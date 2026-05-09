@@ -18,6 +18,8 @@ nav_order: 1
   </a>.
 </p>
 
+<h2><span class="font-weight-bold">Papers (*Equal Technical Contribution, †Equal Advising)</span></h2>
+
 {%- for y in page.years %}
   <h2 class="year">{{y}}</h2>
   {% bibliography -f papers -q @*[year={{y}}]* %}
