@@ -33,7 +33,13 @@ body.sticky-bottom-footer {
   }
 
   img {
-    width: 65%;
+    width: 45%;
+  }
+
+  .address {
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -41,11 +47,21 @@ body.sticky-bottom-footer {
   figure {
     text-align: right;
   }
+
+  .address {
+    margin-left: auto;
+    margin-right: 0;
+  }
 }
 
 .profile.float-left {
   figure {
     text-align: left;
+  }
+
+  .address {
+    margin-left: 0;
+    margin-right: auto;
   }
 }
 
