@@ -48,11 +48,9 @@ layout: default
             {% if page.lang == "zh" %}
               {% assign news_url = "/zh/news/" %}
               {% assign news_title = "动态" %}
-              {% assign scholar_note = "如需查看更新的论文信息，请访问我的" %}
             {% else %}
               {% assign news_url = "/news/" %}
               {% assign news_title = "News" %}
-              {% assign scholar_note = "For more up-to-date information, please check my" %}
             {% endif %}
             <h2><a href="{{ news_url | relative_url }}" style="color: inherit;"><span class="font-weight-bold">{{ news_title }}</span></a></h2>
             <span style="font-family:Times">
