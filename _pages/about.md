@@ -8,7 +8,7 @@ subtitle: yijiong {dot} lin {at} bristol {dot} ac {dot} uk
 
 profile:
   align: right
-  image: prof_pic5_cropped.jpeg
+  image: prof_pic5_cropped.jpg
   image_circular: False # crops the image to make it circular
   address: I envision intelligent robots will reshape our planet.
 
