@@ -1,12 +1,13 @@
 ---
 layout: page
-permalink: /teaching/
-title: Teaching
-lang: en
-description: I am also a Graduate Teaching Assistant at the University of Bristol for Robotics Research Technology and Methods (EMATM0058). Responsibilities include 1) assisting the unit director with administrative duties and offering support during seminars and laboratory sessions., 2) leading weekly critical thinking and discussion sessions on robotics literature, 3) providing project supervision, feedback, marking and assessment to students. Besides, I have also supported 6 master students at the University of Bristol to accomplish their thesis projects.
+permalink: /zh/teaching/
+title: 教学
+lang: zh
+description: 我曾在 University of Bristol 的 Robotics Research Technology and Methods (EMATM0058) 课程中担任 Graduate Teaching Assistant。主要职责包括：协助课程负责人处理教学事务，并在研讨课和实验课中提供支持；带领每周机器人文献的批判性思考与讨论；为学生项目提供指导、反馈、评分和评估。此外，我也支持了 6 名 University of Bristol 硕士生完成毕业论文项目。
 nav: true
 nav_order: 6
 ---
+
 [Boang Guan](https://github.com/guanboang): Combination of Tactile Gym and Mixed Reality Technique
 
 [Di (Ivy) Wu](https://www.linkedin.com/in/ivy-wu98/): Tactile Manipulation Using Deep Reinforcement Learning on an Educational Robotics Platform
@@ -18,4 +19,3 @@ nav_order: 6
 [Jiangfeng Fan](): Towards more Learning Efficiency with Educational Robot in Tactile Gym
 
 [Bowen Deng](): Coarse-to-fine Robotic Pushing with Tactile Vision and Proprioception
-

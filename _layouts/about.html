@@ -45,9 +45,18 @@ layout: default
           <!-- News -->
           <br />
           {% if page.news -%}
-            <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;"><span class="font-weight-bold">News</span></a></h2>
+            {% if page.lang == "zh" %}
+              {% assign news_url = "/zh/news/" %}
+              {% assign news_title = "动态" %}
+              {% assign scholar_note = "如需查看更新的论文信息，请访问我的" %}
+            {% else %}
+              {% assign news_url = "/news/" %}
+              {% assign news_title = "News" %}
+              {% assign scholar_note = "For more up-to-date information, please check my" %}
+            {% endif %}
+            <h2><a href="{{ news_url | relative_url }}" style="color: inherit;"><span class="font-weight-bold">{{ news_title }}</span></a></h2>
             <span style="font-family:Times">
-              (For more up-to-date information, please check my 
+              ({{ scholar_note }}
               <a href="https://scholar.google.com/citations?user=SQl1XCUAAAAJ&hl=en&oi=ao" target="_blank" style="text-decoration: underline;">Google Scholar</a>)
             </span>
             <br />
@@ -56,7 +65,14 @@ layout: default
           <br />
           <!-- Selected papers -->
           {% if page.selected_papers -%}
-            <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;"><span class="font-weight-bold">Papers</span></a></h2>
+            {% if page.lang == "zh" %}
+              {% assign papers_url = "/zh/publications/" %}
+              {% assign papers_title = "论文" %}
+            {% else %}
+              {% assign papers_url = "/publications/" %}
+              {% assign papers_title = "Papers" %}
+            {% endif %}
+            <h2><a href="{{ papers_url | relative_url }}" style="color: inherit;"><span class="font-weight-bold">{{ papers_title }}</span></a></h2>
             {%- include selected_papers.html %}
           {%- endif %}
 

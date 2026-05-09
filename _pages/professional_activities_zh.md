@@ -1,9 +1,9 @@
 ---
 layout: page
-permalink: /professionalactivities/
-title: Reviewer
-lang: en
-description: I have been serving as a reviewer for the following journals and conferences.
+permalink: /zh/professionalactivities/
+title: 学术服务
+lang: zh
+description: 我曾为以下期刊和会议担任审稿人。
 nav: true
 nav_order: 5
 ---
@@ -26,4 +26,4 @@ IEEE International Conference on Robotics and Automation (ICRA)
 
 ## Workshop Organization
 
-Co-organizer, [ICRA 2026 ViTac Workshop: Learning to See and Feel: Vision-Tactile Synergy for Embodied AI](https://shanluo.github.io/ViTacWorkshops/vitac2026)
+联合组织者，[ICRA 2026 ViTac Workshop: Learning to See and Feel: Vision-Tactile Synergy for Embodied AI](https://shanluo.github.io/ViTacWorkshops/vitac2026)

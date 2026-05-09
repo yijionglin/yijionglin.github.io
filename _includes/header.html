@@ -4,8 +4,14 @@
       <!-- Nav Bar -->
       <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}">
         <div class="container">
-          {% if page.permalink != '/' -%}
-          <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
+          {% assign current_lang = page.lang | default: "en" %}
+          {% if current_lang == "zh" %}
+            {% assign home_url = "/zh/" %}
+          {% else %}
+            {% assign home_url = "/" %}
+          {% endif %}
+          {% if page.permalink != '/' and page.permalink != '/zh/' -%}
+          <a class="navbar-brand title font-weight-lighter" href="{{ home_url | relative_url }}">
             {%- if site.title == "blank" -%}
               {%- if site.first_name -%}
                 <span class="font-weight-bold">{{- site.first_name -}}&nbsp;</span>
@@ -37,16 +43,22 @@
           <div class="collapse navbar-collapse text-right" id="navbarNav">
             <ul class="navbar-nav ml-auto flex-nowrap">
 
-              {%- for page in site.pages -%}
-                {% if page.permalink == '/' %}
-                  {% assign about_title = page.title %}
+              {%- for site_page in site.pages -%}
+                {% if current_lang == "zh" %}
+                  {% if site_page.permalink == '/zh/' %}
+                    {% assign about_title = site_page.title %}
+                  {% endif %}
+                {% else %}
+                  {% if site_page.permalink == '/' %}
+                    {% assign about_title = site_page.title %}
+                  {% endif %}
                 {% endif %}
               {% endfor %}
 
               <!-- About -->
-              <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
-                <a class="nav-link" href="{{ '/' | relative_url }}">{{ about_title }}
-                  {%- if page.permalink == '/' -%}
+              <li class="nav-item {% if page.permalink == home_url %}active{% endif %}">
+                <a class="nav-link" href="{{ home_url | relative_url }}">{{ about_title }}
+                  {%- if page.permalink == home_url -%}
                   <span class="sr-only">(current)</span>
                   {%- endif -%}
                 </a>
@@ -65,7 +77,8 @@
               <!-- Other pages -->
               {%- assign sorted_pages = site.pages | sort: "nav_order" -%}
               {%- for p in sorted_pages -%}
-              {%- if p.nav and p.autogen == nil -%}
+              {%- assign p_lang = p.lang | default: "en" -%}
+              {%- if p.nav and p.autogen == nil and p_lang == current_lang -%}
               {%- if p.dropdown %}
               <li class="nav-item dropdown {% if page.title == p.title %}active{% endif %}">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ p.title }}
@@ -94,6 +107,21 @@
               {%- endif -%}
               {%- endif -%}
               {% endfor -%}
+              {% if current_lang == "zh" %}
+                {% assign language_url = page.url | remove_first: "/zh" %}
+                {% if language_url == "" %}{% assign language_url = "/" %}{% endif %}
+                {% assign language_label = "EN" %}
+              {% else %}
+                {% if page.url == "/" %}
+                  {% assign language_url = "/zh/" %}
+                {% else %}
+                  {% assign language_url = page.url | prepend: "/zh" %}
+                {% endif %}
+                {% assign language_label = "中文" %}
+              {% endif %}
+              <li class="nav-item">
+                <a class="nav-link language-toggle" href="{{ language_url | relative_url }}">{{ language_label }}</a>
+              </li>
               {%- if site.enable_darkmode %}
 
               <!-- Toogle theme mode -->

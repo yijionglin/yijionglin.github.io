@@ -334,6 +334,48 @@ footer.sticky-bottom {
 
 // Repositories
 
+.repo {
+  width: 100%;
+}
+
+.repo-card {
+  align-items: center;
+  background-color: var(--global-card-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 6px;
+  display: flex;
+  min-height: 96px;
+  padding: 1rem;
+  text-align: left;
+  text-decoration: none;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+
+  &:hover {
+    border-color: var(--global-theme-color);
+    text-decoration: none;
+    transform: translateY(-1px);
+  }
+}
+
+.repo-icon {
+  color: var(--global-theme-color);
+  flex: 0 0 auto;
+  font-size: 1.75rem;
+  margin-right: 0.85rem;
+}
+
+.repo-owner,
+.repo-branch {
+  color: var(--global-text-color-light);
+  font-size: 0.85rem;
+}
+
+.repo-name {
+  color: var(--global-text-color);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
 @media (min-width: 768px) {
   .repo {
     max-width: 50%;
