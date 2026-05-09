@@ -9,3 +9,9 @@ _site
 Gemfile.lock
 vendor
 
+# Large local publication videos. Keep GIF previews in git, but do not track raw
+# video exports.
+assets/img/publication_review/*.mp4
+assets/img/publication_review/*.mov
+assets/img/publication_review/*.webm
+
