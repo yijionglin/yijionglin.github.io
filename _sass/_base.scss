@@ -269,7 +269,7 @@ blockquote {
 // Social (bottom)
 
 .news.news-scrollable {
-  max-height: 270px;
+  max-height: 7.8rem;
   overflow-y: auto;
   padding-right: 0.5rem;
 }
@@ -593,6 +593,18 @@ footer.sticky-bottom {
           height: auto;
           max-height: 170px;
           object-fit: contain;
+        }
+      }
+
+      @media (max-width: 575.98px) {
+        .preview {
+          max-width: none;
+          margin-bottom: 0.75rem;
+
+          img,
+          video {
+            max-height: none;
+          }
         }
       }
       .abbr {
