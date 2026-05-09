@@ -250,6 +250,20 @@ blockquote {
 
 // Social (bottom)
 
+.news.news-scrollable {
+  max-height: 270px;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+.news.news-scrollable table {
+  margin-bottom: 0;
+}
+
+.news.news-scrollable th {
+  white-space: nowrap;
+}
+
 .social {
   text-align: center;
   .contact-icons {
@@ -496,13 +510,14 @@ footer.sticky-bottom {
       .preview {
         width: 100%;
         min-width: 80px;
-        max-width: 200px;
+        max-width: 260px;
         img,
         video {
           display: block;
           width: 100%;
-          aspect-ratio: 4 / 3;
-          object-fit: cover;
+          height: auto;
+          max-height: 170px;
+          object-fit: contain;
         }
       }
       .abbr {

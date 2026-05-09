@@ -1,5 +1,5 @@
           
-          <div class="news">
+          <div class="news{% if include.scrollable %} news-scrollable{% endif %}">
             {% if site.news != blank -%} 
             {%- assign news_size = site.news | size -%}
             <div class="table-responsive">

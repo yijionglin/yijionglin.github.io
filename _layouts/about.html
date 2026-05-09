@@ -51,12 +51,12 @@ layout: default
               <a href="https://scholar.google.com/citations?user=SQl1XCUAAAAJ&hl=en&oi=ao" target="_blank" style="text-decoration: underline;">Google Scholar</a>)
             </span>
             <br />
-            {%- include news.html %}
+            {%- include news.html scrollable=site.news_scrollable %}
           {%- endif %}
           <br />
           <!-- Selected papers -->
           {% if page.selected_papers -%}
-            <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;"><span class="font-weight-bold">Papers (*Equal Technical Contribution, †Equal Advising)</span></a></h2>
+            <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;"><span class="font-weight-bold">Papers</span></a></h2>
             {%- include selected_papers.html %}
           {%- endif %}
 
