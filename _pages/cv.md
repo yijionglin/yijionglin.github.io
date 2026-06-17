@@ -1,9 +1,0 @@
----
-layout: cv
-permalink: /cv/
-title: CV
-lang: en
-description:
-nav: true
-nav_order: 4
----
